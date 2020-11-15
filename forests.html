@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB TCA</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<div id="wrapper">
+	<header class="forests">
+		<nav><ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a class="antarctic" href="antarctic.html">Antarctic</a></li>
+		  <li><a class="forests" href="forests.html">Forests</a></li>
+		  <li><a class="oceans" href="oceans.html">Oceans</a></li>
+		  <li><a href="contact.html">Contact us</a></li>
+			<li><a href="gdpr.html">GDPR</a></li>
+		</ul></nav>
+		
+		<div class="home-title">
+			<h1>THERE’S A LOT MORE TO FORESTS THAN TREES</h1>
+			<h2>Forests need wildlife to thrive. And we need forests to fight the climate crisis.</h2>
+		</div>
+		
+		<div class="viewport-header">
+		<video id="myVideo" src="img/forests.mp4" autoplay loop></video>
+		<button id="myBtn" onclick="myFunction()"><img src="img/pausebtn.png"></button>
+		</div>
+	</header>
+	
+	<section class="main-section">
+		<article>
+			<div>
+<h2>WHY FORESTS ARE SO IMPORTANT</h2>
+<p>Our little blue planet is actually pretty green. Almost a third of the Earth’s surface is covered by forest. And forests aren’t just full of trees – they’re teeming with all kinds of life. Forests are home to over half of the world’s land-based animal and plant species, and around 300 million people.
+<br><br>
+Not only that, but our planet’s fantastic forests reveal new, hidden secrets about themselves all the time. Every year we’re discovering animals, plants and insects that we never knew existed. For instance between 2010 and 2013 more than 400 ‘new’ species were found in the Amazon alone.
+<br><br>
+Forests are so crucial, for all of us. As well as providing food, shelter, fuel and income for around a billion people, forests also produce a lot of the oxygen we all breathe, and regulate rainfall and climate patterns around the world.
+<br><br>
+But our forests are in crisis. According to the UN, we lose 88,000 sq. km of natural forest globally every year - that's an area of forest the size of London lost every week, or roughly one football pitch every 2 seconds. Only 17% of what’s left has any kind of proper protection.
+<br><br>
+Help us keep our forests alive.</p>
+			</div>
+		</article>
+	</section>
+	
+	<footer id="footer">
+		Copyright ACME Corp
+	</footer>
+	
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<img src='img/pausebtn.png'>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<img src='img/playbtn.png'>";
+  }
+}
+</script>
+	
+</body>
+</html>

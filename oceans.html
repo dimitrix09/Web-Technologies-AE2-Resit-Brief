@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB TCA</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+
+	
+<div id="wrapper">
+	<header class="oceans">
+		<nav><ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a class="antarctic" href="antarctic.html">Antarctic</a></li>
+		  <li><a class="forests" href="forests.html">Forests</a></li>
+		  <li><a class="oceans" href="oceans.html">Oceans</a></li>
+		  <li><a href="contact.html">Contact us</a></li>
+			<li><a href="gdpr.html">GDPR</a></li>
+		</ul></nav>
+		
+		<div class="home-title">
+			<h1>OCEANS</h1>
+			<h2>Our oceans cover over 70% of our planet but yet we know more about the surface of the moon than the ocean floor.</h2>
+		</div>
+		
+		<div class="viewport-header">
+		<video id="myVideo" src="img/oceans.mp4" autoplay loop></video>
+		<button id="myBtn" onclick="myFunction()"><img src="img/pausebtn.png"></button>
+		</div>
+	</header>
+	
+	<section class="main-section">
+		<article>
+			<div>
+<h2>OUR BLUE PLANET</h2>
+<p>The reason our planet looks blue from space is because so much of it is ocean.
+<br><br>
+There are so many reasons why we need to keep our oceans healthy. As well as being home to amazing wildlife, our oceans provide food for billions of people and income for millions.
+<br><br>
+There’s more.The sea also produces around half of all the oxygen we breathe (thanks to phytoplankton, tiny single-celled ocean plants). Not to mention absorbing half of all man-made climate-warming carbon dioxide.
+<br><br>
+But things are not going swimmingly at sea. Latest figures show a dramatic decline in ocean health. The total amount of vertebrate sea life (including fish) has reduced by more than a third since 1970!
+<br><br>
+We already know the causes – our seas are overused and under-protected. Although we have solutions, the challenge is getting everyone on board and and agreeing a way forward to address the key challenges affecting our oceans.
+<br><br>
+We’re working with government decision-makers, industries, communities and consumers to give our seas a healthier future. We’re excited about the potential of a growing ‘blue economy’ – but this needs strong commitment from all those involved in managing and using our oceans.</p>
+			</div>
+		</article>
+	</section>
+	
+	<footer id="footer">
+		Copyright ACME Corp
+	</footer>
+	
+</div>
+	
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<img src='img/pausebtn.png'>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<img src='img/playbtn.png'>";
+  }
+}
+</script>
+</body>
+</html>

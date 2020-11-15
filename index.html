@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB TCA</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<div id="wrapper">
+	<header class="home">
+		<nav><ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a class="antarctic" href="antarctic.html">Antarctic</a></li>
+		  <li><a class="forests" href="forests.html">Forests</a></li>
+		  <li><a class="oceans" href="oceans.html">Oceans</a></li>
+		  <li><a href="contact.html">Contact us</a></li>
+			<li><a href="gdpr.html">GDPR</a></li>
+		</ul></nav>
+		
+		<div class="home-title">
+			<h1>A Future Where People and Nature Thrive</h1>
+			<h2>The planet is at a crossroads. The actions we take together right now are important to protecting the natural world we rely on today—and for setting us on the path to a more hopeful, sustainable future. The Nature Conservancy is taking on the planet’s biggest, most important challenges by focusing on priorities that science shows are the most urgent and where our innovation and expertise can be game changers.</h2>
+		</div>
+		
+		<div class="viewport-header">
+		<video id="myVideo" src="img/home.mp4" autoplay loop></video>
+		<button id="myBtn" onclick="myFunction()"><img src="img/pausebtn.png"></button>
+		</div>
+	</header>
+	
+	<section class="main-section">
+		<article class="half-columns">
+			<div class="image"><img src="img/antarctic.jpg" alt=""/></div>
+			<div class="text-right">
+<h2>WHY THE ANTARCTIC IS SO IMPORTANT</h2>
+<p>The huge frozen landmass at the bottom of our planet is more than just spectacular icing on the globe. It could be vital for our survival too.
+<br><br>
+The Antarctic ice deflects some of the sun’s rays away from the Earth, keeping temperatures liveable.<br><br><a href="antarctic.html">Read more</a></p>
+			</div>
+		</article>
+
+		<article class="half-columns">
+			<div class="text-left">
+<h2>WHY FORESTS ARE SO IMPORTANT</h2>
+<p>Our little blue planet is actually pretty green. Almost a third of the Earth’s surface is covered by forest. And forests aren’t just full of trees – they’re teeming with all kinds of life. Forests are home to over half of the world’s land-based animal and plant species, and around 300 million people. <br><br> Not only that, but our planet’s fantastic forests reveal new, hidden secrets about themselves all the time. Every year we’re discovering animals, plants and insects that we never knew existed. For instance between 2010 and 2013 more than 400 ‘new’ species were found in the Amazon alone. <br><br><a href="forests.html">Read more</a></p>
+			</div>
+			<div class="image"><img src="img/forests.jpg" alt=""/></div>
+		</article>
+
+		<article class="half-columns">
+			<div class="image"><img src="img/oceans.jpg" alt=""/></div>
+			<div class="text-right">
+<h2>OUR BLUE PLANET</h2>
+<p>The reason our planet looks blue from space is because so much of it is ocean.
+<br><br>
+There are so many reasons why we need to keep our oceans healthy. As well as being home to amazing wildlife, our oceans provide food for billions of people and income for millions.
+<br><br>
+There’s more.The sea also produces around half of all the oxygen we breathe (thanks to phytoplankton, tiny single-celled ocean plants). Not to mention absorbing half of all man-made climate-warming carbon dioxide.<br><br><a href="oceans.html">Read more</a></p>
+			</div>
+		</article>
+		
+		<article class="contact">
+			<h2>Contact us</h2>
+			<form>
+				<label>First Name</label><input type="text" name="first_name" value="" required><br>
+				<label>Last Name</label><input type="text" name="last_name" value="" required><br>
+				<label>Email</label><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+				<label>Message</label><textarea></textarea><br>
+				<input type="submit" value="Send Message">
+			</form>
+		</article>
+	</section>
+	
+	<footer id="footer">
+		Copyright ACME Corp
+	</footer>
+	
+</div>
+	
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "<img src='img/pausebtn.png'>";
+  } else {
+    video.pause();
+    btn.innerHTML = "<img src='img/playbtn.png'>";
+  }
+}
+</script>
+	
+</body>
+</html>
